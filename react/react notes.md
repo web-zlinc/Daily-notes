@@ -83,3 +83,4 @@ class Example extends React.Component {
 3、setTimeout 中的代码，触发时 isBatchingUpdates 为 false，所以能够直接进行更新，所以连着输出 2，3。
 
 输出： 0 0 2 3
+
