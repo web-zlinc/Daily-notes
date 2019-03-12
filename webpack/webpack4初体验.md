@@ -216,7 +216,6 @@ module.exports = {
         ]
     }
 }
-复制代码
 ```
 
 
@@ -315,7 +314,6 @@ module.exports = {
 
 ```
 npm i file-loader url-loader -D
-复制代码
 ```
 
 如果是在css文件里引入的如背景图之类的图片，就需要指定一下相对路径
@@ -358,7 +356,6 @@ module.exports = {
 
 ```
 npm i html-withimg-loader -D
-复制代码
 module.exports = {
     module: {
         rules: [
