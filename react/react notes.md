@@ -88,3 +88,6 @@ class Example extends React.Component {
 
 输出： 0 0 2 3
 
+**为什么建议传递给 setState 的参数是一个 callback 而不是一个对象**
+
+因为 this.props 和 this.state 的更新可能是异步的，不能依赖它们的值去计算下一个 state。
