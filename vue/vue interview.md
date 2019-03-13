@@ -225,7 +225,6 @@ export default{
 ```
 import Vue from 'vue';
 export default new Vue();
-复制代码
 ```
 
 2.使用它
@@ -274,7 +273,6 @@ const router=new VueRouter({
 
 ```
 <router-link :to="{name: 'user'}"></router-link>
-复制代码
 ```
 
 ```
@@ -287,7 +285,6 @@ router.push({
 
 ```
 <div>{{$route.params.id}}</div>
-复制代码
 ```
 
 ```
@@ -306,7 +303,6 @@ const router = new VueRouter({
 ```
 <h2>{{$route.params.id}}</h2>
 <router-view></router-view>
-复制代码
 ```
 
 ```
@@ -377,7 +373,6 @@ router.go(3)
 <router-view></router-view>
 <router-view name="a"></router-view>
 <router-view name="b"></router-view>
-复制代码
 ```
 
 ```
