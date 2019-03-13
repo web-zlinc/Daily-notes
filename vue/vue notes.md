@@ -231,7 +231,6 @@ export default{
 ```
 import Vue from 'vue';
 export default new Vue();
-复制代码
 ```
 
 2.使用它
@@ -280,7 +279,6 @@ const router=new VueRouter({
 
 ```
 <router-link :to="{name: 'user'}"></router-link>
-复制代码
 ```
 
 ```
@@ -293,7 +291,6 @@ router.push({
 
 ```
 <div>{{$route.params.id}}</div>
-复制代码
 ```
 
 ```
@@ -312,7 +309,6 @@ const router = new VueRouter({
 ```
 <h2>{{$route.params.id}}</h2>
 <router-view></router-view>
-复制代码
 ```
 
 ```
@@ -383,7 +379,6 @@ router.go(3)
 <router-view></router-view>
 <router-view name="a"></router-view>
 <router-view name="b"></router-view>
-复制代码
 ```
 
 ```
@@ -416,3 +411,12 @@ next: Function，调用该方法来resolve这个钩子，执行效果看参数
 - next():进行下一个钩子
 - next(false):中断当前的导航
 - next('/')或next({path: '/'}):跳转到另一地址
+
+#### Vue complier 实现
+
+Vue complier 是将 template 转化成一个 render 字符串。 可以简单理解成以下步骤：
+
+- parse 过程，将 template 利用正则转化成 AST 抽象语法树。
+- optimize 过程，标记静态节点，后 diff 过程跳过静态节点，提升性能。
+- generate 过程，生成 render 字符串。
+
