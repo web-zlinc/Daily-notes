@@ -1,5 +1,9 @@
 ## vue interview
 
+### 单页面应用的工作原理
+
+单页面工作原理是通过浏览器URL的#后面的hash变化就会引起页面变化的特性来把页面分成不同的小模块，然后通过修改hash来让页面展示我们想让看到的内容。
+
 #### 对MVVM的理解？
 
 MVVM是Model-View-ViewModel的缩写，Model代表数据模型负责业务逻辑和数据封装，View代表UI组件负责界面和显示，ViewModel监听模型数据的改变和控制视图行为，处理用户交互，简单来说就是通过双向数据绑定把View层和Model层连接起来。在MVVM架构下，View和Model没有直接联系，而是通过ViewModel进行交互，我们只关注业务逻辑，不需要手动操作DOM，不需要关注View和Model的同步工作。
